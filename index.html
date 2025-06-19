@@ -3,75 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pooja Jain - Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pooja Jain - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="light-mode">
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">PJ</div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Pooja Jain</a>
             </div>
-            <button id="theme-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
-        </nav>
-    </header>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Pooja Jain</h1>
-                <h2>Full Stack Web Developer</h2>
-                <p>CSE @ GLA University</p>
-                <div class="social-links">
-                    <a href="mailto:poojapersonal12186@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="tel:+917534838784" title="Phone">
-                        <i class="fas fa-phone"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/pooja-jain-4711bb235" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Pooja-jain09" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Pooja Jain</span></h1>
+                <h2 class="hero-subtitle">B.Tech in Computer Engineering & Applications</h2>
+                <p class="hero-description">
+                    Passionate and dedicated Computer Engineering student at GLA University, Mathura, with hands-on experience in full stack and front-end development. Skilled in Java, Python, HTML, CSS, JavaScript, and backend technologies. I enjoy building real-world projects and collaborating in teams to deliver impactful solutions.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-            <div class="scroll-down">
-                <i class="fas fa-chevron-down"></i>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="images/profile.jpg" alt="Pooja Jain" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <!-- <i class="fas fa-user-circle profile-fallback"></i> -->
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="bio">
-                <p>I'm a final-year B.Tech CSE student passionate about web development, constantly exploring new technologies and building innovative solutions.</p>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a Computer Engineering student at GLA University, Mathura, graduated in May 2025. I have a strong foundation in software development, web technologies, and problem-solving. My journey includes internships in full stack and front-end development, and I have built several real-world projects including a Blogging Website, Expense Tracker, and Resume Builder.
+                    </p>
+                    <p>
+                        I am skilled in Java, Python, HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, SQL, and more. I am a quick learner, effective communicator, and enjoy working in teams to solve problems and deliver results.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Internships</p>
+                        </div>
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Major Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>7.52</h3>
+                            <p>CGPA (B.Tech)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <h3>Education</h3>
+                        <div class="education-item">
+                            <div class="education-logo">
+                                <img src="images/education/university-logo.png" alt="GLA University Logo" onerror="this.style.display='none';">
+                            </div>
+                            <div class="education-details">
+                                <h4>B.Tech., Computer Engineering & Applications</h4>
+                                <p>GLA University, Mathura</p>
+                                <span>CGPA: 7.52 (May 2025)</span>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-logo"></div>
+                            <div class="education-details">
+                                <h4>Intermediate</h4>
+                                <p>St. Georges School</p>
+                                <span>84.6% (July 2021)</span>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-logo"></div>
+                            <div class="education-details">
+                                <h4>High School</h4>
+                                <p>St. Georges School</p>
+                                <span>63.83% (May 2019)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="education">
-                <h3>Education</h3>
-                <div class="education-item">
-                    <h4>B.Tech in Computer Science Engineering</h4>
-                    <p>GLA University | CGPA: 7.38</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><span>Java</span></div>
+                        <div class="skill-item"><span>Python</span></div>
+                        <div class="skill-item"><span>HTML</span></div>
+                        <div class="skill-item"><span>CSS</span></div>
+                        <div class="skill-item"><span>JavaScript</span></div>
+                        <div class="skill-item"><span>SQL</span></div>
+                        <div class="skill-item"><span>OOPS</span></div>
+                    </div>
                 </div>
-                <div class="education-item">
-                    <h4>Intermediate</h4>
-                    <p>St. Georges School | 84.6%</p>
+                <div class="skills-category">
+                    <h3>Frameworks & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><span>Node.js</span></div>
+                        <!-- <div class="skill-item"><span>Express.js</span></div> -->
+                        <div class="skill-item"><span>MongoDB</span></div>
+                        <div class="skill-item"><span>Spring</span></div>
+                        <div class="skill-item"><span>Jira</span></div>
+                        <div class="skill-item"><span>Git</span></div>
+                        <div class="skill-item"><span>GitHub</span></div>
+                        <div class="skill-item"><span>VS Code</span></div>
+                    </div>
                 </div>
-                <div class="education-item">
-                    <h4>High School</h4>
-                    <p>St. Georges School | 63.83%</p>
+                <div class="skills-category">
+                    <h3>Other Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><span>Agile</span></div>
+                        <div class="skill-item"><span>Microservices</span></div>
+                        <div class="skill-item"><span>SDLC</span></div>
+                        <div class="skill-item"><span>Effective Communication</span></div>
+                        <div class="skill-item"><span>Problem Solving</span></div>
+                        <div class="skill-item"><span>Team Work</span></div>
+                        <div class="skill-item"><span>Adaptability</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/face-recognition.jpg" alt="Smart Campus Face Recognition System" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fas fa-user project-fallback"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Campus Face Recognition System</h3>
+                        <p>Group project using Python, OpenCV, LBPH, HaarCascade. Detects faces and provides details to maintain discipline and decorum by monitoring students through real-time face recognition.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>LBPH</span>
+                            <span>HaarCascade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/expense-tracker.jpg" alt="Expense Tracker Website" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fas fa-wallet project-fallback"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Expense Tracker Website</h3>
+                        <p>Solo project using HTML, CSS, and JavaScript. A finance tracker to identify where you are spending your money.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/resume-builder.jpg" alt="Resume Builder" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fas fa-file-alt project-fallback"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Resume Builder</h3>
+                        <p>Group project using HTML, CSS, and JavaScript. My role was to handle all the designing part.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/blogging-website.jpg" alt="Blogging Website" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fas fa-blog project-fallback"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blogging Website</h3>
+                        <p>Created during internship at Coding Raja Technologies. Utilized CRUD operations with HTML, CSS, JavaScript, MongoDB, Express.js, and Node.js.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>MongoDB</span>
+                            <span>Express.js</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/calculator.jpg" alt="Calculator" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fas fa-calculator project-fallback"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Calculator</h3>
+                        <p>Created during internship at CodSoft Technologies. Built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/projects/portfolio.jpg" alt="Portfolio Website" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <i class="fas fa-user-circle project-fallback"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal project after backend web development training at GLA University. Showcases proficiency in JavaScript and web technologies.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <!-- <span>Node.js</span> -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -79,63 +287,148 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="timeline">
-            <div class="experience-item">
-                <h3>Full Stack Dev Intern</h3>
-                <h4>Coding Raja Technologies</h4>
-                <p class="duration">March 2024 - May 2024</p>
-                <p>Developed a Blogging Website with CRUD functionality using HTML, CSS, JS, Express.js, Node.js, and MongoDB.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Frontend Intern</h3>
-                <h4>CodSoft Technologies</h4>
-                <p class="duration">August 2023 - September 2023</p>
-                <p>Built a Calculator application using HTML, CSS, and JavaScript.</p>
-            </div>
-            <div class="experience-item">
-                <h3>Job-Oriented Course</h3>
-                <h4>GLA University</h4>
-                <p class="duration">June 2023 - July 2023</p>
-                <p>Created a Portfolio Website using Node.js, HTML, CSS, and JavaScript.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Smart Campus Face Recognition System</h3>
-                <p>Real-time face detection system for student monitoring using Python, OpenCV, and LBPH.</p>
-                <div class="tech-stack">
-                    <span>Python</span>
-                    <span>OpenCV</span>
-                    <span>LBPH</span>
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/companies/coding-raja.png" alt="Coding Raja Technologies Logo" onerror="this.style.display='none';">
+                            </div>
+                            <div class="timeline-info">
+                                <h3>Full Stack Web Development Intern</h3>
+                                <span class="company">Coding Raja Technologies (Online)</span>
+                                <span class="duration">March 2024 - May 2024</span>
+                            </div>
+                        </div>
+                        <p>Completed a two-month online internship in Full Stack Development, gaining hands-on experience with HTML, CSS, JavaScript, MongoDB, Express.js, and Node.js. Created a Blogging Website utilizing CRUD operations.</p>
+                        <ul>
+                            <li>Worked with HTML, CSS, JavaScript, MongoDB, Express.js, Node.js</li>
+                            <li>Developed a Blogging Website with CRUD operations</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/companies/codsoft.png" alt="CodSoft Technologies Logo" onerror="this.style.display='none';">
+                            </div>
+                            <div class="timeline-info">
+                                <h3>Front-End Intern</h3>
+                                <span class="company">CodSoft Technologies (Online)</span>
+                                <span class="duration">August 2023 - September 2023</span>
+                            </div>
+                        </div>
+                        <p>Completed a one-month online internship in Front-End, gaining hands-on experience with HTML, CSS, JavaScript. Created a Calculator project.</p>
+                        <ul>
+                            <li>Worked with HTML, CSS, JavaScript</li>
+                            <li>Developed a Calculator project</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="company-logo">
+                                <img src="images/companies/gla-university.png" alt="GLA University Logo" onerror="this.style.display='none';">
+                            </div>
+                            <div class="timeline-info">
+                                <h3>Job Oriented Value Added Course Trainee</h3>
+                                <span class="company">GLA University, Mathura</span>
+                                <span class="duration">June 2023 - July 2023</span>
+                            </div>
+                        </div>
+                        <p>Completed backend web development training with Node.js and foundational knowledge in HTML, CSS, and JavaScript. Developed a Portfolio project to showcase proficiency in JavaScript.</p>
+                        <ul>
+                            <li>Trained in Node.js, HTML, CSS, JavaScript</li>
+                            <li>Developed a Portfolio project</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <h3>Expense Tracker Website</h3>
-                <p>A web application to track and manage personal expenses.</p>
-                <a href="https://github.com/Pooja-jain09/Expense-Tracker-Website" target="_blank" class="project-link">
-                    <i class="fab fa-github"></i> View Project
-                </a>
-            </div>
-            <div class="project-card">
-                <h3>Resume Builder</h3>
-                <p>An application to create professional resumes with customizable templates.</p>
-                <a href="https://github.com/Pooja-jain09/Resume-Builder" target="_blank" class="project-link">
-                    <i class="fab fa-github"></i> View Project
-                </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:poojapersonal12186@gmail.com">poojapersonal12186@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-7534838784</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Agra, Uttar Pradesh, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/pooja-jain-4711bb235" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Pooja-jain09" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="certifications" style="margin-top:2rem;">
+                        <h4>Certifications</h4>
+                        <ul>
+                            <li>HackerRank Certified in Problem Solving (Basic)</li>
+                            <li>Meta Certified in Front-End Development</li>
+                            <li>HackerRank Certified in Java (Basic)</li>
+                            <li>NPTEL Certified in Machine Learning Course</li>
+                            <li>TATA (Forage) Certified in Data Visualisation</li>
+                            <li>Deloitte Certified in Data Analytics Job Simulation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Pooja Jain. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Pooja Jain. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
